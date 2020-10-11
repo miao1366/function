@@ -27,8 +27,15 @@ int main() {
     v = (uint32_t)(-m);
 	printf("%lu\n",v);
 
+	m = 2;
+    v = (uint32_t)(-m);
+	printf("%lu\n",v);
 
-    sz = (size_t)PTYPE_RESPONSE << MESSAGE_TYPE_SHIFT;
+	m = 0;
+    v = (uint32_t)(-m);
+	printf("%lu\n",v);
+   
+   	sz = (size_t)PTYPE_RESPONSE << MESSAGE_TYPE_SHIFT;
 	printf("zu:%zu\n",sz);
 
 	size_t shift= MESSAGE_TYPE_SHIFT;
