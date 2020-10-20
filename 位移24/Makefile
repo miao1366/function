@@ -1,7 +1,7 @@
 CXX		= g++
 CC		= gcc
 
-a.out:cpp c 
+a.out: c 
 
 cpp:main.cpp
 	$(CXX) $^ -o $@

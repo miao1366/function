@@ -40,5 +40,9 @@ int main() {
 
 	size_t shift= MESSAGE_TYPE_SHIFT;
 	printf("shitf:%zu\n",shift);
+
+    int n= 0;
+	printf("n:%d\n",n << 0);
+
 	return 0;
 }

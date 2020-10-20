@@ -55,3 +55,6 @@ dylib2_test(lua_State* L) {
  
     return 1;
 }
+
+// gcc -I./ -shared -fpic -o my_math.so test.c 
+// lua ./callc.lua
