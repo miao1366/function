@@ -42,7 +42,8 @@ int main() {
 	printf("shitf:%zu\n",shift);
 
     int n= 0;
-	printf("n:%d\n",n << 0);
+    //n >>= 1;
+	printf("n:%d\n",n >>= 1);
 
 	return 0;
 }
