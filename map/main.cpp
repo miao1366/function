@@ -10,11 +10,11 @@ using namespace std;
     bool uniqueOccurrences() {
         map<int, int> mapNum;
         for (size_t i = 0; i < 10; i++) {
-            mapNum[i] = mapNum[i] + 1;
+            mapNum[i+i] = mapNum[i+i] + 1;
         }
         map<int, int>::iterator it = mapNum.begin();
         while(it != mapNum.end()) {
-            std::cout<<"iterator  " << it->second <<std::endl;
+            std::cout<<"iterator  " << it->first << "  " << it->second <<std::endl;
             it++;
         }
     }
