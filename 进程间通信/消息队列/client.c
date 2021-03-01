@@ -44,7 +44,7 @@ int main()
     sprintf(msg.mtext, "hello, I'm client %d", getpid());
     msgsnd(msqid, &msg, sizeof(msg.mtext), 0);
 
-    // 读取类型为777的消息
+    // 读取类型为999的消息
     msgrcv(msqid, &msg, 256, 999, 0);
     printf("Client: receive msg.mtext is: %s.\n", msg.mtext);
     printf("Client: receive msg.mtype is: %ld.\n", msg.mtype);
