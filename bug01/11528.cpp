@@ -1,5 +1,5 @@
 struct A {
-  A();
+  A(){};
 
 private:
  A(A& other) {}
