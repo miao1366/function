@@ -26,5 +26,6 @@ int main() {
     void *p4 = malloc(1000);
     printf("malloc p4: %ld\n", malloc_usable_size(p4));
   
+    size_t a = 0;
     return 0;
 }
